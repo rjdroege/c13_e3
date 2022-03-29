@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  isDisabled = false;
+
+  changeStatus(){
+    this.isDisabled = !this.isDisabled;
+  }
+
   title = 'dynamic-button-event-binding';
 }
